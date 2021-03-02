@@ -31,14 +31,14 @@
 }
 @mixin delements{
     & h2{
-        font-size: 0.8rem;
-        font-weight: 800;
+        font-size: map-get($police-size, s);
+        font-weight: 900;
         margin: 0rem 0rem 0.5rem 0.5rem;
         height: auto;
         width: auto;
     }
     & p{
-        font-size: 0.8rem;
+        font-size: map-get($police-size, xs);
         margin-left: 0.5rem;
         height: auto;
         width: auto;
@@ -47,4 +47,13 @@
         height: auto;
         width: auto;
     }
+}
+@mixin auto{
+    width: auto;
+    height: auto;
+}
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

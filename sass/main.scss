@@ -1,7 +1,9 @@
 
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/functions";
+@import "./utils/maps";
 @import "./base/structure";
 @import "./layout/header";
+@import "./pages/index";
 @import "./layout/footer";
-@import"./pages/index";
