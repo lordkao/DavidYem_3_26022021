@@ -9,4 +9,11 @@
         font-size: 2rem;
         margin: 1rem 0rem 0.5rem 0rem;
     }
+    @media screen and(min-width:700px) {/*test du @media*/
+        width: auto;
+        height: 200%;
+        align-self: center;
+        background-color: lighten($color--primary, 20);
+        margin: 0rem 25% 0rem 25%;
+    }
 }

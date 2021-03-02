@@ -8,6 +8,12 @@
     border-radius: 15px;
     overflow: hidden;
     margin: 1rem 0rem;
+    @media screen and(min-width:700px) {/*test du @media*/
+        height: 25rem;
+        width: 35%;
+        border-radius: 30px;
+        justify-content: space-between;
+    }
 }
 @mixin photofit{
     height: 130%;
@@ -15,18 +21,30 @@
     object-fit: cover;
     position: relative;
     bottom: 2.5rem;
+    @media screen and(min-width:700px) {/*test du @media*/
+        object-fit: fill;
+    }
 }
 @mixin photosize{
     height: 9rem;
     width:100%;
+    @media screen and(min-width:700px) {/*test du @media*/
+        height: 80%;
+        width: 100%;
+        overflow: hidden;
+    }
 }
 @mixin description{
     height: 4rem;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items:center;
-        background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: white;
+     @media screen and(min-width:700px) {/*test du @media*/
+        height: 20%;
+         width: 100%;
+    }
 }
 @mixin delements{
     & h2{
@@ -35,16 +53,28 @@
         margin: 0rem 0rem 0.5rem 0.5rem;
         height: auto;
         width: auto;
+        @media screen and(min-width:700px) {/*test du @media*/
+            margin-left: 3rem;
+            font-size: 2rem;
+        }
     }
     & p{
         font-size: map-get($police-size, xs);
         margin-left: 0.5rem;
         height: auto;
         width: auto;
+        @media screen and(min-width:700px) {/*test du @media*/
+            margin-left: 3rem;
+            font-size: 1.5rem;
+        }
     }
     & i{
         height: auto;
         width: auto;
+        @media screen and(min-width:700px) {/*test du @media*/
+            margin-left: 3rem;
+            font-size: 1.5rem;
+        }
     }
 }
 @mixin auto{
