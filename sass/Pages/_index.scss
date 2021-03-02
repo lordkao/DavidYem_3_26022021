@@ -21,7 +21,7 @@
 }
 .localisation__title{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: map-get($police-size,m );
     font-weight: bold;
     border: 1px red solid;
 }
@@ -40,45 +40,52 @@
     background-color: purple;
     border: 1px red solid;
 }
-.presentation{
-    width: auto;
-    height: auto;
+/*Fonctionnement du réservation*/
+.fonctionnement{
+    @include auto;
     display: flex;
     flex-direction: column;
-    padding:2rem 0rem;
-    border: 1px black solid;
+    padding:3rem 1rem;
+    &__title{
+        font-size: map-get($police-size, m);
+        font-weight: bold;
+    }
 }
-.presentation__title{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-left: 1rem;
-    border: 1px red solid;
+.presentation{
+    @include auto;
+    margin: 0.5rem 0rem 0rem 1rem;
+    &__etape1{
+        @include fonctionnement;
+        & i{
+           @include i;
+        }
+        &--circle{
+            @include circle;
+        }
+    }   
+    &__etape2{
+        @include fonctionnement;
+        & i{
+            @include i;        
+        }
+        &--circle{
+            @include circle;
+        }
+    }
+    &__etape3{
+        @include fonctionnement;
+        background-color: lighten($color--primary,37);
+        & i{
+            @include i;     
+            color: $color--primary   
+        }
+        &--circle{
+            @include circle;
+        }
+    }
 }
-.presentation__etape{
-    margin-left: 1rem;
-    border: 1px red solid;
-}
-.presentation__etape1{
-    width: 90%;
-    display: flex;
-    margin-top: 0.5rem;
-    background-color: #b2b2b2;
-    border: 1px red solid;
-}
-.presentation__etape2{
-    width: 90%;
-    display: flex;
-    margin-top: 0.5rem;
-    background-color: #b2b2b2;
-    border: 1px red solid;
-}
-.presentation__etape3{
-    width: 90%;
-    display: flex;
-    margin-top: 0.5rem;
-    background-color: #b2b2b2;
-    border: 1px red solid;
-}
+
+/*Partie Menu de présentation des restaurants*/
 .menu{
     width: auto;
     height: auto;
@@ -86,16 +93,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0rem;
-    background-color: #f2f2f2;
+    padding: 3rem 0rem;
+    background-color: $color--background;
 }
 .menu__title{
     height: auto;
     width: 90%;
-    font-size: 1.3rem;
+    font-size: map-get($police-size,m);
     font-weight: bold;
     text-align: left;
-    margin-top: 1rem;
 }
 .cadre1{
     @include cadre;
@@ -108,8 +114,11 @@
     &__description{
         @include description;
         @include delements;
+        & i{
+            margin-right: 1.2rem;
+            font-size: 1.5rem;
+        }
     }
-
 }
 .cadre2{
     @include cadre;
@@ -122,6 +131,10 @@
     &__description{
         @include description;
         @include delements;
+        & i{
+            margin-right: 1.2rem;
+            font-size: 1.5rem;
+        }
     }
 
 }
@@ -136,6 +149,10 @@
     &__description{
         @include description;
         @include delements;
+        & i{
+            margin-right: 1.2rem;
+            font-size: 1.5rem;
+        }
     }
 
 }
@@ -150,6 +167,10 @@
     &__description{
         @include description;
         @include delements;
+        & i{
+            margin-right: 1.2rem;
+            font-size: 1.5rem;
+        }
     }
 
 }

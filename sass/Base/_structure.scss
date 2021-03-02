@@ -50,10 +50,11 @@ table {
     src: url("Shrikhand-Regular.otf");
 }
 html{
+   @include auto;
     font-size: 100%;
 }
 body{
-    width: 100%;
+    @include auto;
     font-family: 'Roboto',Arial, Helvetica, sans-serif,'Courier New', Courier, monospace,Georgia, 'Times New Roman', Times, serif;
 }
 
