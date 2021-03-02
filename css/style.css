@@ -75,7 +75,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px black solid;
 }
 .head__heading {
   font-family: "Shrikhand";
@@ -87,47 +86,51 @@ body {
   width: auto;
   height: auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: #f2f2f2;
-  padding-bottom: 2rem;
-  border: 1px black solid;
+  padding-bottom: 3rem;
 }
-
 .localisation__barre {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
-  font-size: 1.2rem;
-  background-color: #C2C2C2;
-  border: 1px red solid;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #d9d9d9;
 }
-
+.localisation__barre i {
+  margin-right: 1rem;
+}
 .localisation__title {
+  height: auto;
+  width: 60%;
   text-align: center;
   font-size: 1.3rem;
   font-weight: bold;
-  border: 1px red solid;
+  margin: 2rem 0rem 1rem 0rem;
 }
-
 .localisation__quote {
+  width: auto;
+  height: auto;
   text-align: center;
   font-size: 1rem;
-  border: 1px red solid;
+  margin: 0rem 1rem 2rem 1rem;
 }
-
 .localisation__btn {
+  width: 50%;
   height: 3rem;
+  padding: 0rem 1rem 0rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.8rem;
   color: white;
-  border-radius: 20px 20px;
-  background-color: purple;
-  border: 1px red solid;
+  border-radius: 25px 25px;
+  background-color: #9356DC;
 }
 
 /*Fonctionnement du réservation*/
