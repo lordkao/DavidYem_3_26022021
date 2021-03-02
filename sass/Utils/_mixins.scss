@@ -1,0 +1,50 @@
+@mixin cadre{
+    height: 13rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 1rem 0rem;
+}
+@mixin photofit{
+    height: 130%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    bottom: 2.5rem;
+}
+@mixin photosize{
+    height: 9rem;
+    width:100%;
+}
+@mixin description{
+    height: 4rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+        background-color: white;
+}
+@mixin delements{
+    & h2{
+        font-size: 0.8rem;
+        font-weight: 800;
+        margin: 0rem 0rem 0.5rem 0.5rem;
+        height: auto;
+        width: auto;
+    }
+    & p{
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+        height: auto;
+        width: auto;
+    }
+    & i{
+        height: auto;
+        width: auto;
+    }
+}
