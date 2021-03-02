@@ -1,0 +1,155 @@
+.localisation{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding-bottom: 2rem;
+    border: 1px black solid;
+}
+.localisation__barre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+    background-color: #C2C2C2;
+    border: 1px red solid;
+}
+.localisation__title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px red solid;
+}
+.localisation__quote{
+    text-align: center;
+    font-size: 1rem;
+    border: 1px red solid;
+}
+.localisation__btn{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px 20px;
+    background-color: purple;
+    border: 1px red solid;
+}
+.presentation{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding:2rem 0rem;
+    border: 1px black solid;
+}
+.presentation__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    border: 1px red solid;
+}
+.presentation__etape{
+    margin-left: 1rem;
+    border: 1px red solid;
+}
+.presentation__etape1{
+    width: 90%;
+    display: flex;
+    margin-top: 0.5rem;
+    background-color: #b2b2b2;
+    border: 1px red solid;
+}
+.presentation__etape2{
+    width: 90%;
+    display: flex;
+    margin-top: 0.5rem;
+    background-color: #b2b2b2;
+    border: 1px red solid;
+}
+.presentation__etape3{
+    width: 90%;
+    display: flex;
+    margin-top: 0.5rem;
+    background-color: #b2b2b2;
+    border: 1px red solid;
+}
+.menu{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+    background-color: #f2f2f2;
+}
+.menu__title{
+    height: auto;
+    width: 90%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 1rem;
+}
+.cadre1{
+    @include cadre;
+    &__photo{
+       @include photosize;
+        & img{
+          @include photofit;
+        }
+    }
+    &__description{
+        @include description;
+        @include delements;
+    }
+
+}
+.cadre2{
+    @include cadre;
+    &__photo{
+        @include photosize;
+        & img{
+            @include photofit;
+        }
+    }
+    &__description{
+        @include description;
+        @include delements;
+    }
+
+}
+.cadre3{
+    @include cadre;
+    &__photo{
+        @include photosize;
+        & img{
+            @include photofit;
+        }
+    }
+    &__description{
+        @include description;
+        @include delements;
+    }
+
+}
+.cadre4{
+    @include cadre;
+    &__photo{
+        @include photosize;
+        & img{
+            @include photofit;
+        }
+    }
+    &__description{
+        @include description;
+        @include delements;
+    }
+
+}

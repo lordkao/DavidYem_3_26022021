@@ -4,88 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Ohmyfood</title>
 </head>
 <body>
-    <header><!--entête logo-->
-        <h1>ohmyfood</h1>
+    <header class="head"><!--entête logo-->
+        <h1 class="head__heading">ohmyfood</h1>
     </header>
-    <div><!--partie localisation-->
-        <div><!--géolocalisation-->
+    <div class="localisation"><!--partie localisation-->
+        <div class="localisation__barre"><!--géolocalisation-->
             <div>
                 <i></i>
                 <p>Paris,Belleville</p>
             </div>
         </div>
-        <h1>Réservez le menu qui vous convient</h1><!--quote-->
-        <p>Découvrez des restaurants d'exception,sélectionnés par nos soins.</p>
-        <div><!--boutton explorer-->
+        <h1 class="localisation__title">Réservez le menu qui vous convient</h1><!--quote-->
+        <p class="localisation__quote">Découvrez des restaurants d'exception,sélectionnés par nos soins.</p>
+        <div class="localisation__btn"><!--boutton explorer-->
             <p>Explorer nos restaurants</p>
         </div>
     </div>
-    <div><!--présentation du fonctionnement du site-->
-        <h1>Fonctionnement</h1>
-        <ul>
-            <li>
+    <div class="presentation"><!--présentation du fonctionnement du site-->
+        <h1 class="presentation__title">Fonctionnement</h1>
+        <ul class="presentation__etape">
+            <li class="presentation__etape1">
                 <div><p>1</p></div>
                 <i> </i>
                 <p>Choisissez un restaurant</p></li>
-            <li>
+            <li class="presentation__etape2">
                 <div><p>2</p></div>
                 <i> </i>
                 <p>Composez votre menu</p></li>
-            <li>
+            <li class="presentation__etape3">
                 <div><p>3</p></div>
                 <i> </i>
                 <p>Dégustez au restaurant</p></li>
         </ul>
     </div>
-    <section><!--Menu des 4 restaurants-->
-        <h1>Restaurants</h1>
-        <div>
-            <div><img/></div>
+    <section class="menu"><!--Menu des 4 restaurants-->
+        <h1 class="menu__title">Restaurants</h1>
+        <div class="cadre1">
+            <div class="cadre1__photo"><img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"/></div>
 
-            <div><!--description-->
-                <div>
+            <div class="cadre1__description"><!--description-->
                     <h2>La palette du goût</h2>
                     <p>Ménilmontant</p>
-                </div>
-                <i></i>
+                    <div><i></i></div>
             </div>
         </div>
 
-        <div>
-            <div><img/></div>
+        <div class="cadre2">
+            <div class="cadre2__photo"><img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"/></div>
 
-            <div><!--description-->
+            <div class="cadre2__description"><!--description-->
                 <h2>La note enchantée</h2>
                 <p>Charonne</p>
             </div>
             <i></i>
         </div>
 
-        <div>
-            <div><img/></div>
+        <div class="cadre3">
+            <div class="cadre3__photo"><img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"/></div>
 
-            <div><!--description-->
+            <div class="cadre3__description"><!--description-->
                 <h2>À la française</h2>
                 <p>Cité Rouge</p>
             </div>
             <i></i>
         </div>
 
-        <div>
-            <div><img/></div>
+        <div class="cadre4">
+            <div class="cadre4__photo"><img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"/></div>
 
-            <div><!--description-->
+            <div class="cadre4__description"><!--description-->
                 <h2>Le délice des sens</h2>
                 <p>Folie-Méricourt</p>
             </div>
             <i></i>
         </div>
     </section>
-    <footer><!--pied de page-->
+    <footer class="foot"><!--pied de page-->
         <h3>ohmyfood</h3>
         <ul>
             <li>

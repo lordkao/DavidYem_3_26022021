@@ -1,0 +1,13 @@
+.head{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+    &__heading{
+        font-family: "Shrikhand";
+        font-size: 2rem;
+        margin: 1rem 0rem 0.5rem 0rem;
+    }
+}
