@@ -6,6 +6,7 @@
     padding-bottom: 3rem;
     &__barre{
         @include center;
+        color: darken($color--background,60);
         width: 100%;
         height: 3rem;
         font-size: map-get($police-size,s);
@@ -47,7 +48,7 @@
 .presentation{
     @include auto;
     margin: 0.5rem 0rem 0rem 1rem;
-    &__etape1{
+    &__etape{
         @include fonctionnement;
         & i{
            @include i;
@@ -55,28 +56,12 @@
         &--circle{
             @include circle;
         }
-    }   
-    &__etape2{
-        @include fonctionnement;
-        & i{
-            @include i;        
-        }
-        &--circle{
-            @include circle;
-        }
-    }
-    &__etape3{
-        @include fonctionnement;
-        background-color: lighten($color--primary,37);
-        & i{
-            @include i;     
-            color: $color--primary   
-        }
-        &--circle{
-            @include circle;
-        }
-    }
+    } 
+    &--purple{
+        background-color: lighten($color--primary,33);
+    }  
 }
+
 
 /*Partie Menu de présentation des restaurants*/
 .menu{
@@ -88,6 +73,13 @@
     align-items: center;
     padding: 3rem 0rem;
     background-color: $color--background;
+    @media screen and(min-width:700px) {/*test du @media*/
+        @include auto;
+        margin: 0rem 20%;
+        border-radius: 50px;
+        background-color: $color--background;
+        margin-bottom: 3rem;
+    }
 }
 .menu__title{
     height: auto;
@@ -95,8 +87,14 @@
     font-size: map-get($police-size,m);
     font-weight: bold;
     text-align: left;
+    @media screen and(min-width:700px) {/*test du @media*/
+        @include auto;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
 }
-.cadre1{
+.cadre{
     @include cadre;
     &__photo{
        @include photosize;
@@ -112,58 +110,4 @@
             font-size: 1.5rem;
         }
     }
-}
-.cadre2{
-    @include cadre;
-    &__photo{
-        @include photosize;
-        & img{
-            @include photofit;
-        }
-    }
-    &__description{
-        @include description;
-        @include delements;
-        & i{
-            margin-right: 1.2rem;
-            font-size: 1.5rem;
-        }
-    }
-
-}
-.cadre3{
-    @include cadre;
-    &__photo{
-        @include photosize;
-        & img{
-            @include photofit;
-        }
-    }
-    &__description{
-        @include description;
-        @include delements;
-        & i{
-            margin-right: 1.2rem;
-            font-size: 1.5rem;
-        }
-    }
-
-}
-.cadre4{
-    @include cadre;
-    &__photo{
-        @include photosize;
-        & img{
-            @include photofit;
-        }
-    }
-    &__description{
-        @include description;
-        @include delements;
-        & i{
-            margin-right: 1.2rem;
-            font-size: 1.5rem;
-        }
-    }
-
 }

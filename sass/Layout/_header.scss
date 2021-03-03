@@ -6,7 +6,7 @@
     align-items: center;
     &__heading{
         font-family: "Shrikhand";
-        font-size: 2rem;
+        font-size: map-get($police-size, l);
         margin: 1rem 0rem 0.5rem 0rem;
     }
     @media screen and(min-width:700px) {/*test du @media*/
@@ -15,5 +15,11 @@
         align-self: center;
         background-color: lighten($color--primary, 20);
         margin: 0rem 25% 0rem 25%;
+    }
+    & i{
+        font-size: map-get($police-size, m);
+        position:absolute;
+        left: 1rem;
+        top: 1.3rem;
     }
 }

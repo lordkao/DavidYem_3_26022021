@@ -10,7 +10,7 @@
     margin: 1rem 0rem;
     @media screen and(min-width:700px) {/*test du @media*/
         height: 25rem;
-        width: 35%;
+        width: 30rem;
         border-radius: 30px;
         justify-content: space-between;
     }
@@ -55,7 +55,7 @@
         width: auto;
         @media screen and(min-width:700px) {/*test du @media*/
             margin-left: 3rem;
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
     }
     & p{
@@ -65,7 +65,7 @@
         width: auto;
         @media screen and(min-width:700px) {/*test du @media*/
             margin-left: 3rem;
-            font-size: 1.5rem;
+            font-size: 1rem;
         }
     }
     & i{
@@ -73,7 +73,7 @@
         width: auto;
         @media screen and(min-width:700px) {/*test du @media*/
             margin-left: 3rem;
-            font-size: 1.5rem;
+            font-size: 1rem;
         }
     }
 }
