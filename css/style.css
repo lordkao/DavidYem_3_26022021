@@ -78,7 +78,7 @@ body {
 }
 .head__heading {
   font-family: "Shrikhand";
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 1rem 0rem 0.5rem 0rem;
 }
 @media screen and (min-width: 700px) {
@@ -95,7 +95,8 @@ body {
   font-size: 1.3rem;
   position: absolute;
   left: 1rem;
-  top: 1.3rem;
+  top: 1.1rem;
+  color: #4d4d4d;
 }
 
 .localisation {
@@ -115,7 +116,7 @@ body {
   color: #595959;
   width: 100%;
   height: 3rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   background-color: #d9d9d9;
 }
@@ -134,7 +135,7 @@ body {
   width: auto;
   height: auto;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin: 0rem 1rem 2rem 1rem;
 }
 .localisation__btn {
@@ -288,7 +289,7 @@ body {
   background-color: white;
 }
 .cadre__description h2 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 900;
   margin: 0rem 0rem 0.5rem 0.5rem;
   height: auto;
@@ -318,7 +319,7 @@ footer {
 }
 
 .logo {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: "Shrikhand";
   margin-bottom: 1.5rem;
 }
@@ -343,12 +344,132 @@ footer {
 
 .top-img {
   width: 100%;
-  height: 30rem;
+  height: 15rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 .top-img img {
+  height: 100%;
+  width: 120%;
+  object-fit: cover;
+  position: relative;
+  right: 2.5rem;
+}
+
+.carte {
   width: auto;
   height: auto;
-  object-fit: fill;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  margin-top: -3rem;
+  padding: 2rem 1rem;
+  border-radius: 30px 30px 0px 0px;
+  background-color: #f2f2f2;
+}
+.carte__title {
+  font-family: "Shrikhand";
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.carte__title i {
+  position: relative;
+  bottom: 0.2rem;
+  margin-right: 1rem;
+}
+
+.entrée {
+  width: auto;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+.entrée__title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+
+.plat {
+  width: auto;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+.plat__title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+
+.dessert {
+  width: auto;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+.dessert__title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+
+.cadre-menu {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 1rem 0.5rem;
+  margin-bottom: 1rem;
+}
+.cadre-menu__name h3 {
+  width: auto;
+  height: auto;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-overflow: ellipsis;
+}
+.cadre-menu__name p {
+  width: auto;
+  height: auto;
+  font-size: 0.8rem;
+  text-overflow: ellipsis;
+}
+.cadre-menu__price {
+  align-self: flex-end;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.command {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.command__btn {
+  width: 50%;
+  height: 3rem;
+  padding: 0rem 1rem 0rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: white;
+  border-radius: 25px 25px;
+  background-color: #9356DC;
+}
+
+.green-line {
+  width: 2.2rem;
+  border: 1px #99E2D0 solid;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
