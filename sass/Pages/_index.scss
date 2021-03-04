@@ -95,7 +95,12 @@
     }
 }
 .cadre{
-    @include cadre;
+    & a{
+        text-decoration: none;
+        color: black;
+    }
+    @include cadre; 
+    
     &__photo{
        @include photosize;
         & img{

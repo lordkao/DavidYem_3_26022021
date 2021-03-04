@@ -259,26 +259,18 @@ body {
   overflow: hidden;
   margin: 1rem 0rem;
 }
-@media screen and (min-width: 700px) {
+.cadre a {
+  text-decoration: none;
+  color: black;
+}
+@media screen and (min-width: 800px) {
   .cadre {
-    /*test du @media*/
-    height: 25rem;
-    width: 30rem;
-    border-radius: 30px;
-    justify-content: space-between;
+    border: 1px red solid;
   }
 }
 .cadre__photo {
   height: 9rem;
   width: 100%;
-}
-@media screen and (min-width: 700px) {
-  .cadre__photo {
-    /*test du @media*/
-    height: 80%;
-    width: 100%;
-    overflow: hidden;
-  }
 }
 .cadre__photo img {
   height: 130%;
@@ -286,12 +278,6 @@ body {
   object-fit: cover;
   position: relative;
   bottom: 2.5rem;
-}
-@media screen and (min-width: 700px) {
-  .cadre__photo img {
-    /*test du @media*/
-    object-fit: fill;
-  }
 }
 .cadre__description {
   height: 4rem;
@@ -301,13 +287,6 @@ body {
   align-items: center;
   background-color: white;
 }
-@media screen and (min-width: 700px) {
-  .cadre__description {
-    /*test du @media*/
-    height: 20%;
-    width: 100%;
-  }
-}
 .cadre__description h2 {
   font-size: 1rem;
   font-weight: 900;
@@ -315,36 +294,15 @@ body {
   height: auto;
   width: auto;
 }
-@media screen and (min-width: 700px) {
-  .cadre__description h2 {
-    /*test du @media*/
-    margin-left: 3rem;
-    font-size: 1.5rem;
-  }
-}
 .cadre__description p {
   font-size: 0.8rem;
   margin-left: 0.5rem;
   height: auto;
   width: auto;
 }
-@media screen and (min-width: 700px) {
-  .cadre__description p {
-    /*test du @media*/
-    margin-left: 3rem;
-    font-size: 1rem;
-  }
-}
 .cadre__description i {
   height: auto;
   width: auto;
-}
-@media screen and (min-width: 700px) {
-  .cadre__description i {
-    /*test du @media*/
-    margin-left: 3rem;
-    font-size: 1rem;
-  }
 }
 .cadre__description i {
   margin-right: 1.2rem;
@@ -381,6 +339,16 @@ footer {
 .foot__contact a {
   color: white;
   text-decoration: none;
+}
+
+.top-img {
+  width: 100%;
+  height: 30rem;
+}
+.top-img img {
+  width: auto;
+  height: auto;
+  object-fit: fill;
 }
 
 /*# sourceMappingURL=style.css.map */

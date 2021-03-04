@@ -1,0 +1,97 @@
+.top-img{
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    & img{
+        height: 100%;
+        width: 120%;
+        object-fit: fill;
+        position: relative;
+        right: 2.5rem;
+    }
+}
+.carte{
+    @include auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    margin-top: -3rem;
+    padding: 2rem 1rem;
+    border-radius: 30px 30px 0px 0px;
+    background-color: $color--background;
+    &__title{
+        font-family: "Shrikhand";
+        display: flex;
+        font-size: map-get($police-size,l);
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        & i{
+            position: relative;
+            bottom: 0.2rem;
+            margin-right: 1rem;
+        }
+    }
+}
+.entrée{
+    @include auto;
+    margin-bottom: 1.5rem;
+    &__title{
+       @include title-menu;
+    }
+}
+.plat{
+    @include auto;
+    margin-bottom: 1.5rem;
+
+    &__title{
+       @include title-menu;
+    }
+}
+.dessert{
+    @include auto;
+    margin-bottom: 1.5rem;
+
+    &__title{
+       @include title-menu;
+    }
+}
+.cadre-menu{
+    @include cadre-menu;
+    &__name{
+        
+        & h3{
+            @include auto;
+            font-size: map-get($police-size,s);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            text-overflow:ellipsis;
+
+        }
+        &  p{
+            @include auto;
+            font-size: map-get($police-size,xs);
+            text-overflow: ellipsis;
+        }
+    }
+    &__price{
+        align-self: flex-end;
+        font-size: map-get($police-size,xs);
+        font-weight: bold;
+        margin-right: 0.5rem;
+    }
+}
+.command{
+    @include auto;
+    @include center;
+    &__btn{
+        @include btn;
+    }
+}
+.green-line{
+    width: 2.2rem;
+    border: 1px $color--tertiary solid;
+    margin-bottom: 1rem;
+}
