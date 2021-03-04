@@ -274,6 +274,7 @@ body {
   }
 }
 .cadre__photo {
+  position: relative;
   height: 9rem;
   width: 100%;
 }
@@ -283,6 +284,21 @@ body {
   object-fit: cover;
   position: relative;
   bottom: 2.5rem;
+}
+.cadre__photo--new {
+  position: absolute;
+  height: 1.8rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  color: #2c9c81;
+  font-size: 0.9rem;
+  border-radius: 3px;
+  font-weight: bold;
+  top: 1rem;
+  right: 1rem;
 }
 .cadre__description {
   height: 4rem;
@@ -312,6 +328,9 @@ body {
 .cadre__description i {
   margin-right: 1.2rem;
   font-size: 1.5rem;
+}
+.cadre__description i:hover {
+  color: #9356DC;
 }
 
 footer {

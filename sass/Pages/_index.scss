@@ -106,9 +106,16 @@
     @include cadre; 
     
     &__photo{
+        position: relative;
        @include photosize;
         & img{
           @include photofit;
+        }
+        &--new{
+            position: absolute;
+            @include new;
+            top: 1rem;
+            right: 1rem;
         }
     }
     &__description{
@@ -117,6 +124,9 @@
         & i{
             margin-right: 1.2rem;
             font-size: 1.5rem;
+            &:hover{
+                color: $color--primary;
+            }
         }
     }
 }
