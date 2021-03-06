@@ -118,14 +118,14 @@ body {
   height: 3rem;
   font-size: 0.9rem;
   font-weight: bold;
-  background-color: #d9d9d9;
+  background-color: #e5e5e5;
 }
 .localisation__barre i {
   margin-right: 1rem;
 }
 .localisation__title {
   height: auto;
-  width: 60%;
+  width: 70%;
   text-align: center;
   font-size: 1.3rem;
   font-weight: bold;
@@ -139,6 +139,7 @@ body {
   margin: 0rem 1rem 2rem 1rem;
 }
 .localisation__btn {
+  box-shadow: 0px 3px 10px #8c8c8c;
   width: 50%;
   height: 3rem;
   padding: 0rem 1rem 0rem 1rem;
@@ -148,8 +149,11 @@ body {
   font-size: 0.8rem;
   color: white;
   border-radius: 25px 25px;
-  background-color: #99E2D0;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff6ad6, #9356DC);
+}
+.localisation__btn:hover {
+  background: linear-gradient(#ff83dd, #a16be0);
+  box-shadow: 0px 6px 10px #8c8c8c;
 }
 
 /*Fonctionnement du réservation*/
@@ -171,6 +175,7 @@ body {
   margin: 0.5rem 0rem 0rem 1rem;
 }
 .presentation__etape {
+  box-shadow: 1px 3px 10px #d9d9d9;
   width: 100%;
   height: 4rem;
   display: flex;
@@ -178,7 +183,7 @@ body {
   align-items: center;
   font-weight: bold;
   margin-top: 1rem;
-  background-color: #f9f9f9;
+  background-color: #f2f2f2;
   border-radius: 20px;
 }
 .presentation__etape i {
@@ -206,7 +211,8 @@ body {
   right: 0.5rem;
 }
 .presentation--purple {
-  background-color: #f7f2fc;
+  box-shadow: 1px 3px 10px #d9d9d9;
+  background-color: #f2eafb;
 }
 .presentation--purple i {
   color: #9356DC;
@@ -220,7 +226,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0rem;
+  padding: 3rem 1rem;
   background-color: #f2f2f2;
 }
 @media screen and (min-width: 700px) {
@@ -254,8 +260,9 @@ body {
 }
 
 .cadre {
+  box-shadow: 1px 3px 10px #d9d9d9;
   height: 13rem;
-  width: 90%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -439,6 +446,7 @@ footer {
 }
 
 .cadre-menu {
+  box-shadow: 1px 3px 10px #d9d9d9;
   display: flex;
   justify-content: space-between;
   width: auto;
@@ -448,21 +456,28 @@ footer {
   padding: 1rem 0.5rem;
   margin-bottom: 1rem;
 }
+.cadre-menu__name {
+  width: 90%;
+}
 .cadre-menu__name h3 {
   width: auto;
   height: auto;
   font-size: 0.9rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .cadre-menu__name p {
-  width: auto;
-  height: auto;
-  font-size: 0.8rem;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 0.8rem;
 }
 .cadre-menu__price {
+  width: 10%;
   align-self: flex-end;
   font-size: 0.8rem;
   font-weight: bold;
@@ -477,6 +492,7 @@ footer {
   align-items: center;
 }
 .command__btn {
+  box-shadow: 0px 3px 10px #8c8c8c;
   width: 50%;
   height: 3rem;
   padding: 0rem 1rem 0rem 1rem;
@@ -486,8 +502,11 @@ footer {
   font-size: 0.8rem;
   color: white;
   border-radius: 25px 25px;
-  background-color: #99E2D0;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff6ad6, #9356DC);
+}
+.command__btn:hover {
+  background: linear-gradient(#ff83dd, #a16be0);
+  box-shadow: 0px 6px 10px #8c8c8c;
 }
 
 .green-line {

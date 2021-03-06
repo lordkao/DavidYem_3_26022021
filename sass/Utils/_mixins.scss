@@ -1,6 +1,6 @@
 @mixin cadre{
     height: 13rem;
-    width: 90%;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,7 +67,7 @@
     align-items: center;
     font-weight: bold;
     margin-top: 1rem;
-    background-color: lighten($color--background, 2.7);
+    background-color: $color--background;
     border-radius: 20px;
 }
 @mixin circle{

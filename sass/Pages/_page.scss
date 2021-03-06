@@ -59,24 +59,30 @@
     }
 }
 .cadre-menu{
+    box-shadow: $cadre-shadow;
     @include cadre-menu;
     &__name{
-        
+        width: 90%;
         & h3{
             @include auto;
             font-size: map-get($police-size,s);
             font-weight: bold;
             margin-bottom: 0.5rem;
-            text-overflow:ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
         }
         &  p{
-            @include auto;
-            font-size: map-get($police-size,xs);
+            width: 90%;
+            white-space: nowrap;
+            overflow: hidden;
             text-overflow: ellipsis;
+            font-size: map-get($police-size,xs);
         }
     }
     &__price{
+        width: 10%;
         align-self: flex-end;
         font-size: map-get($police-size,xs);
         font-weight: bold;
@@ -86,7 +92,9 @@
 .command{
     @include auto;
     @include center;
+    
     &__btn{
+        box-shadow:$btn-shadow;
         @include btn;
     }
 }

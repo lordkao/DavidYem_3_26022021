@@ -11,17 +11,17 @@
         height: 3rem;
         font-size: map-get($police-size,s);
         font-weight: bold;
-        background-color: darken($color--background,10);
+        background-color: darken($color--background,5);
         & i{
             margin-right: 1rem;
         }
     }
     &__title{
         height: auto;
-        width: 60%;
+        width: 70%;
         text-align: center;
         font-size: map-get($police-size,m );
-        font-weight: bold;
+        font-weight:bold;
         margin: 2rem 0rem 1rem 0rem;
     }
     &__quote{
@@ -31,8 +31,9 @@
         margin: 0rem 1rem 2rem 1rem;
     }
     &__btn{
-            @include btn;
-        }
+        box-shadow:$btn-shadow;
+        @include btn;
+    }
 }
 /*Fonctionnement du réservation*/
 .fonctionnement{
@@ -49,6 +50,7 @@
     @include auto;
     margin: 0.5rem 0rem 0rem 1rem;
     &__etape{
+        box-shadow: $cadre-shadow;
         @include fonctionnement;
         & i{
            @include i;
@@ -58,7 +60,8 @@
         }
     } 
     &--purple{
-        background-color: lighten($color--primary,37);
+        box-shadow: $cadre-shadow;
+        background-color: lighten($color--primary,35);
         & i{
         color: $color--primary;
     }
@@ -75,7 +78,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem 0rem;
+    padding: 3rem 1rem;
     background-color: $color--background;
     @media screen and(min-width:700px) {/*test du @media*/
         @include auto;
@@ -99,6 +102,7 @@
     }
 }
 .cadre{
+    box-shadow: $cadre-shadow;
     & a{
         text-decoration: none;
         color: black;
