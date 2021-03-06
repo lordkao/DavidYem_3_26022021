@@ -78,7 +78,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem 0rem;
+    padding: 3rem 1rem;
     background-color: $color--background;
     @media screen and(min-width:700px) {/*test du @media*/
         @include auto;

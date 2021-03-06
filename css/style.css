@@ -226,7 +226,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0rem;
+  padding: 3rem 1rem;
   background-color: #f2f2f2;
 }
 @media screen and (min-width: 700px) {
@@ -262,7 +262,7 @@ body {
 .cadre {
   box-shadow: 1px 3px 10px #d9d9d9;
   height: 13rem;
-  width: 90%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -456,21 +456,28 @@ footer {
   padding: 1rem 0.5rem;
   margin-bottom: 1rem;
 }
+.cadre-menu__name {
+  width: 90%;
+}
 .cadre-menu__name h3 {
   width: auto;
   height: auto;
   font-size: 0.9rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .cadre-menu__name p {
-  width: auto;
-  height: auto;
-  font-size: 0.8rem;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 0.8rem;
 }
 .cadre-menu__price {
+  width: 10%;
   align-self: flex-end;
   font-size: 0.8rem;
   font-weight: bold;
