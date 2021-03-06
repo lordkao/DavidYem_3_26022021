@@ -67,7 +67,7 @@
     align-items: center;
     font-weight: bold;
     margin-top: 1rem;
-    background-color: lighten($color--background, 2.7);
+    background-color: $color--background;
     border-radius: 20px;
 }
 @mixin circle{

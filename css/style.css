@@ -118,14 +118,14 @@ body {
   height: 3rem;
   font-size: 0.9rem;
   font-weight: bold;
-  background-color: #d9d9d9;
+  background-color: #e5e5e5;
 }
 .localisation__barre i {
   margin-right: 1rem;
 }
 .localisation__title {
   height: auto;
-  width: 60%;
+  width: 70%;
   text-align: center;
   font-size: 1.3rem;
   font-weight: bold;
@@ -139,6 +139,7 @@ body {
   margin: 0rem 1rem 2rem 1rem;
 }
 .localisation__btn {
+  box-shadow: 0px 3px 10px #8c8c8c;
   width: 50%;
   height: 3rem;
   padding: 0rem 1rem 0rem 1rem;
@@ -171,6 +172,7 @@ body {
   margin: 0.5rem 0rem 0rem 1rem;
 }
 .presentation__etape {
+  box-shadow: 1px 3px 10px #d9d9d9;
   width: 100%;
   height: 4rem;
   display: flex;
@@ -178,7 +180,7 @@ body {
   align-items: center;
   font-weight: bold;
   margin-top: 1rem;
-  background-color: #f9f9f9;
+  background-color: #f2f2f2;
   border-radius: 20px;
 }
 .presentation__etape i {
@@ -206,7 +208,8 @@ body {
   right: 0.5rem;
 }
 .presentation--purple {
-  background-color: #f7f2fc;
+  box-shadow: 1px 3px 10px #d9d9d9;
+  background-color: #f2eafb;
 }
 .presentation--purple i {
   color: #9356DC;
@@ -254,6 +257,7 @@ body {
 }
 
 .cadre {
+  box-shadow: 1px 3px 10px #d9d9d9;
   height: 13rem;
   width: 90%;
   display: flex;
@@ -439,6 +443,7 @@ footer {
 }
 
 .cadre-menu {
+  box-shadow: 1px 3px 10px #d9d9d9;
   display: flex;
   justify-content: space-between;
   width: auto;
@@ -477,6 +482,7 @@ footer {
   align-items: center;
 }
 .command__btn {
+  box-shadow: 0px 3px 10px #8c8c8c;
   width: 50%;
   height: 3rem;
   padding: 0rem 1rem 0rem 1rem;
