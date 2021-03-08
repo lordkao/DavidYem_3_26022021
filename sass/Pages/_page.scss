@@ -59,34 +59,89 @@
     }
 }
 .cadre-menu{
-    box-shadow: $cadre-shadow;
     @include cadre-menu;
+    @include auto;
+    height: 4rem;
+    &:hover{
+        & > .cadre-menu__name{
+            width: 65%;
+        }
+        & > .cadre-menu__rotation{
+            width: 20%;
+            transition:width 0.5s;
+            & i{
+                transform: translateX(0px) rotate(1turn);
+                transition: transform 0.5s;
+            }
+        }
+    }
+    &:active{
+        & > .cadre-menu__name{
+            width: 65%;
+        }
+        & > .cadre-menu__rotation{
+            width: 20%;
+            transition:width 0.5s;
+            & i{
+                transform: translateX(0px) rotate(1turn);
+                transition: transform 0.5s;
+            }
+        }
+    }
     &__name{
-        width: 90%;
+        width: 85%;
+        height: 100%;
+        background-color: white;
+        transition: width 0.5s;
         & h3{
             @include auto;
             font-size: map-get($police-size,s);
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-            white-space: nowrap;
+            margin: 1rem 0.5rem 0rem 0.5rem;
+            padding-bottom: 0.2rem;
             overflow: hidden;
+            white-space: nowrap;
             text-overflow: ellipsis;
-
+            font-weight: bold;
         }
-        &  p{
-            width: 90%;
-            white-space: nowrap;
+        & p{
+            @include auto;
+            margin: 0.5rem 0.5rem;
+            padding-bottom: 0.2rem;
             overflow: hidden;
+            white-space: nowrap;
             text-overflow: ellipsis;
             font-size: map-get($police-size,xs);
         }
     }
     &__price{
-        width: 10%;
-        align-self: flex-end;
         font-size: map-get($police-size,xs);
         font-weight: bold;
-        margin-right: 0.5rem;
+        height: 100%;
+        width: 15%;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        background-color: white;
+
+        
+        & p{
+            margin-bottom: 0.9rem;
+        }
+    }
+    &__rotation{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color--tertiary;
+        width: 0%;
+        transition:width 0.5s ;
+        & i{
+            font-size: 1.5rem;
+            color: white;
+            transform: translateX(10px) rotate(0deg);
+            transition: transform 0s;
+        } 
     }
 }
 .command{
