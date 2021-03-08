@@ -446,42 +446,93 @@ footer {
 }
 
 .cadre-menu {
-  box-shadow: 1px 3px 10px #d9d9d9;
-  display: flex;
-  justify-content: space-between;
   width: auto;
   height: auto;
+  display: flex;
   background-color: white;
   border-radius: 15px;
-  padding: 1rem 0.5rem;
   margin-bottom: 1rem;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+  height: 4rem;
+}
+.cadre-menu:hover > .cadre-menu__name {
+  width: 65%;
+}
+.cadre-menu:hover > .cadre-menu__rotation {
+  width: 20%;
+  transition: width 0.5s;
+}
+.cadre-menu:hover > .cadre-menu__rotation i {
+  transform: translateX(0px) rotate(1turn);
+  transition: transform 0.5s;
+}
+.cadre-menu:active > .cadre-menu__name {
+  width: 65%;
+}
+.cadre-menu:active > .cadre-menu__rotation {
+  width: 20%;
+  transition: width 0.5s;
+}
+.cadre-menu:active > .cadre-menu__rotation i {
+  transform: translateX(0px) rotate(1turn);
+  transition: transform 0.5s;
 }
 .cadre-menu__name {
-  width: 90%;
+  width: 85%;
+  height: 100%;
+  background-color: white;
+  transition: width 0.5s;
 }
 .cadre-menu__name h3 {
   width: auto;
   height: auto;
   font-size: 0.9rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  white-space: nowrap;
+  margin: 1rem 0.5rem 0rem 0.5rem;
+  padding-bottom: 0.2rem;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
+  font-weight: bold;
 }
 .cadre-menu__name p {
-  width: 90%;
-  white-space: nowrap;
+  width: auto;
+  height: auto;
+  margin: 0.5rem 0.5rem;
+  padding-bottom: 0.2rem;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
   font-size: 0.8rem;
 }
 .cadre-menu__price {
-  width: 10%;
-  align-self: flex-end;
   font-size: 0.8rem;
   font-weight: bold;
-  margin-right: 0.5rem;
+  height: 100%;
+  width: 15%;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+  background-color: white;
+}
+.cadre-menu__price p {
+  margin-bottom: 0.9rem;
+}
+.cadre-menu__rotation {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 0%;
+  transition: width 0.5s;
+}
+.cadre-menu__rotation i {
+  font-size: 1.5rem;
+  color: white;
+  transform: translateX(10px) rotate(0deg);
+  transition: transform 0s;
 }
 
 .command {
