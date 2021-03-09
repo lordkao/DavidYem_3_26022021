@@ -13,12 +13,12 @@
     }
 }
 @mixin new{
-    height: 1.8rem;
-    width: 5rem;
+    height: 1.5rem;
+    width: 4.5rem;
     @include center;
     background-color: $color--tertiary;
     color: darken($color--tertiary,35);
-    font-size: map-get($police-size, s); 
+    font-size: map-get($police-size, xs); 
     border-radius: 3px;
     font-weight: bold;
 }
