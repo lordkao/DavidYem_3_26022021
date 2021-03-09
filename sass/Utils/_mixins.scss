@@ -8,9 +8,6 @@
     border-radius: 15px;
     overflow: hidden;
     margin: 1rem 0rem;
-    @media screen and(min-width:800px) {
-        border: 1px red solid;
-    }
 }
 @mixin photofit{
     height: 130%;
@@ -30,25 +27,20 @@
     justify-content: space-between;
     align-items:center;
     background-color: white;
+    overflow: hidden;
 }
-@mixin delements{
-    & h2{
+@mixin h2{
         font-size: map-get($police-size, s);
         font-weight: 900;
-        margin: 0rem 0rem 0.5rem 0.5rem;
+        margin: 1rem 0rem 0.5rem 0.5rem;
         height: auto;
         width: auto;
-    }
-    & p{
+}
+@mixin p{
         font-size: map-get($police-size, xs);
         margin-left: 0.5rem;
         height: auto;
         width: auto;
-    }
-    & i{
-        height: auto;
-        width: auto;
-    }
 }
 @mixin auto{
     width: auto;

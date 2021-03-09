@@ -271,29 +271,26 @@ body {
   overflow: hidden;
   margin: 1rem 0rem;
 }
-.cadre a {
+.cadre .lien {
   text-decoration: none;
   color: black;
   width: 100%;
+  height: auto;
+  overflow: hidden;
 }
-@media screen and (min-width: 800px) {
-  .cadre {
-    border: 1px red solid;
-  }
-}
-.cadre__photo {
+.cadre .lien__photo {
   position: relative;
   height: 9rem;
   width: 100%;
 }
-.cadre__photo img {
+.cadre .lien__photo img {
   height: 130%;
   width: 100%;
   object-fit: cover;
   position: relative;
   bottom: 2.5rem;
 }
-.cadre__photo--new {
+.cadre .lien__photo--new {
   position: absolute;
   height: 1.8rem;
   width: 5rem;
@@ -315,29 +312,43 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  overflow: hidden;
 }
-.cadre__description h2 {
+.cadre__description a {
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  width: 85%;
+  overflow: hidden;
+}
+.cadre__description a h2 {
   font-size: 0.9rem;
   font-weight: 900;
-  margin: 0rem 0rem 0.5rem 0.5rem;
+  margin: 1rem 0rem 0.5rem 0.5rem;
   height: auto;
   width: auto;
 }
-.cadre__description p {
+.cadre__description a p {
   font-size: 0.8rem;
   margin-left: 0.5rem;
   height: auto;
   width: auto;
 }
-.cadre__description i {
-  height: auto;
-  width: auto;
+.cadre__description--coeur {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
 }
-.cadre__description i {
-  margin-right: 1.2rem;
-  font-size: 1.5rem;
+.cadre__description--coeur:hover {
+  cursor: grabbing;
 }
-.cadre__description i:hover {
+.cadre__description--coeur i {
+  margin-bottom: 1.5rem;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+.cadre__description--coeur i:hover {
   color: #9356DC;
 }
 

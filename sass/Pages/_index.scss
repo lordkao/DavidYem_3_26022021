@@ -72,8 +72,7 @@
 
 /*Partie Menu de présentation des restaurants*/
 .menu{
-    width: auto;
-    height: auto;
+    @include auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,34 +102,59 @@
 }
 .cadre{
     box-shadow: $cadre-shadow;
-    & a{
+    @include cadre;
+    .lien{
         text-decoration: none;
         color: black;
-        width: 100%
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        &__photo{
+            position: relative;
+            @include photosize;
+      
+            & img{
+                @include photofit;
+            }
+            &--new{
+                position: absolute;
+                @include new;
+                top: 1rem;
+                right: 1rem;
+            }
+        }
     }
-    @include cadre; 
     
-    &__photo{
-        position: relative;
-       @include photosize;
-        & img{
-          @include photofit;
-        }
-        &--new{
-            position: absolute;
-            @include new;
-            top: 1rem;
-            right: 1rem;
-        }
-    }
     &__description{
         @include description;
-        @include delements;
-        & i{
-            margin-right: 1.2rem;
-            font-size: 1.5rem;
+        & a{
+            height: 100%;
+            text-decoration: none;
+            color: black;
+            width: 85%;
+            overflow: hidden;
+            & h2{
+                @include h2;
+            } 
+            & p{
+                @include p;
+            }
+        }
+        &--coeur{
+            width: 15%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
             &:hover{
-                color: $color--primary;
+                cursor: grabbing;
+            }
+            & i{
+                margin-bottom: 1.5rem;
+                margin-left: 0.5rem;
+                font-size: 1rem;
+                &:hover{
+                    color: $color--primary;
+                }
             }
         }
     }
