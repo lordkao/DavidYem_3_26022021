@@ -292,14 +292,14 @@ body {
 }
 .cadre .lien__photo--new {
   position: absolute;
-  height: 1.8rem;
-  width: 5rem;
+  height: 1.5rem;
+  width: 4.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   color: #2c9c81;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   border-radius: 3px;
   font-weight: bold;
   top: 1rem;
@@ -344,6 +344,7 @@ body {
   cursor: grabbing;
 }
 .cadre__description--coeur i {
+  transform: scale(1.2, 1.5);
   margin-bottom: 1.5rem;
   margin-left: 0.5rem;
   font-size: 1rem;
