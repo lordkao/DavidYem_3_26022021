@@ -1,4 +1,14 @@
 @charset "UTF-8";
+@keyframes apparition {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -436,15 +446,27 @@ footer {
   margin-right: 1rem;
 }
 
-.entrée {
+.entree {
   width: auto;
   height: auto;
   margin-bottom: 1.5rem;
 }
-.entrée__title {
+.entree__title {
   font-size: 0.9rem;
   text-transform: uppercase;
   margin-bottom: 0.2rem;
+}
+.entree__cadre {
+  animation: apparition 0.8s 0.2s ease-in-out both;
+}
+.entree__cadre--1 {
+  animation-delay: 0.2s;
+}
+.entree__cadre--2 {
+  animation-delay: 0.4s;
+}
+.entree__cadre--3 {
+  animation-delay: 0.6s;
 }
 
 .plat {
@@ -457,6 +479,18 @@ footer {
   text-transform: uppercase;
   margin-bottom: 0.2rem;
 }
+.plat__cadre {
+  animation: apparition 0.8s 0.2s ease-in-out both;
+}
+.plat__cadre--1 {
+  animation-delay: 0.2s;
+}
+.plat__cadre--2 {
+  animation-delay: 0.4s;
+}
+.plat__cadre--3 {
+  animation-delay: 0.6s;
+}
 
 .dessert {
   width: auto;
@@ -467,6 +501,18 @@ footer {
   font-size: 0.9rem;
   text-transform: uppercase;
   margin-bottom: 0.2rem;
+}
+.dessert__cadre {
+  animation: apparition 0.8s 0.2s ease-in-out both;
+}
+.dessert__cadre--1 {
+  animation-delay: 0.2s;
+}
+.dessert__cadre--2 {
+  animation-delay: 0.4s;
+}
+.dessert__cadre--3 {
+  animation-delay: 0.6s;
 }
 
 .cadre-menu {

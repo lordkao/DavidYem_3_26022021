@@ -7,4 +7,8 @@ $color-btn--hover:linear-gradient(darken(lighten($color--secondary,5),3),lighten
 $cadre-shadow:1px 3px 10px darken($color--background,10);
 $btn-shadow:0px 3px 10px darken($color--background,40);
 $btn-shadow--hover:0px 6px 10px darken($color--background,40);
-
+$duree:0.8s;
+$delais:0.2s;
+$nb-entree:3;
+$nb-plat:3;
+$nb-dessert:3;

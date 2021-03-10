@@ -35,19 +35,34 @@
         }
     }
 }
-.entrée{
+.entree{
     @include auto;
     margin-bottom: 1.5rem;
     &__title{
        @include title-menu;
     }
+    &__cadre{
+        animation: apparition $duree $delais ease-in-out both;
+            @for $num-cadre from 1 through $nb-entree{
+                &--#{$num-cadre}{
+                    animation-delay: $delais * $num-cadre;
+            }
+        }
+    }
 }
 .plat{
     @include auto;
     margin-bottom: 1.5rem;
-
     &__title{
        @include title-menu;
+    }
+    &__cadre{
+        animation: apparition $duree $delais ease-in-out both;
+        @for $num-cadre from 1 through $nb-plat{
+            &--#{$num-cadre}{
+                animation-delay: $delais * $num-cadre;
+            }
+        }
     }
 }
 .dessert{
@@ -56,6 +71,14 @@
 
     &__title{
        @include title-menu;
+    }
+    &__cadre{
+        animation: apparition $duree $delais ease-in-out both;
+        @for $num-cadre from 1 through $nb-dessert{
+            &--#{$num-cadre}{
+                animation-delay: $delais * $num-cadre;
+            }
+        }
     }
 }
 .cadre-menu{
