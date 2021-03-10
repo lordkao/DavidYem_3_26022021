@@ -468,6 +468,9 @@ footer {
 .entree__cadre--3 {
   animation-delay: 0.6s;
 }
+.entree__cadre--4 {
+  animation-delay: 0.8s;
+}
 
 .plat {
   width: auto;
