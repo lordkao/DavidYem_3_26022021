@@ -15,8 +15,9 @@ $btn-shadow--hover:0px 6px 10px darken($color--background,40);
 /**animations**/
 $duree:0.3s;
 $delais:0.2s;
-$boule-duree: 3s;
+$boule-duree: 1.5s;
 $boule-delais:0.2s;
+$bloc-delais: $boule-duree + $boule-delais;
 
 /**menus**/
 $nb-entree:4;

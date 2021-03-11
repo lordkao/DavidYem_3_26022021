@@ -19,14 +19,14 @@
     opacity: 0;
   }
   50% {
-    transform: scale(1) rotate(1turn);
+    transform: scale(1) rotate(0.5turn);
     opacity: 1;
   }
   70% {
     opacity: 1;
   }
   100% {
-    transform: scale(0.5) rotate(2turn);
+    transform: scale(0.5) rotate(1turn);
     opacity: 0;
   }
 }
@@ -147,7 +147,7 @@ body {
 }
 
 .bloc-page {
-  animation: deplacement 0s 3s both;
+  animation: deplacement 0s 1.7s both;
 }
 
 .loading {
@@ -162,7 +162,7 @@ body {
   background: radial-gradient(#fface8, #ae80e5);
   justify-content: center;
   align-items: center;
-  animation: disparition 3s 0.2s linear both;
+  animation: disparition 1.5s 0.2s linear both 1;
 }
 
 .spinner {
@@ -172,7 +172,7 @@ body {
   width: 8rem;
   border-radius: 4rem;
   border: 2px #99E2D0 solid;
-  animation: tourne 3s ease-in both 1;
+  animation: tourne 1.5s 0.2s ease-in both 1;
 }
 .spinner__boule1 {
   position: absolute;
