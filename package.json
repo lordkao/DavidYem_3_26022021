@@ -4,7 +4,8 @@
   "description": "��#\u0000 \u0000D\u0000a\u0000v\u0000i\u0000d\u0000Y\u0000e\u0000m\u0000_\u00003\u0000_\u00002\u00006\u00000\u00002\u00002\u00000\u00002\u00001\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
-    "sass":"sass --watch ./sass/main.scss:./css/style.css"
+    "sass":"sass --watch ./sass/main.scss:./css/style.css",
+    "prefix":"postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist":"last 4 versions",
   "bugs": {
     "url": "https://github.com/lordkao/DavidYem_3_26022021/issues"
   },
