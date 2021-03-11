@@ -1,14 +1,25 @@
+/**couleurs**/
+
 $color--primary: #9356DC;
 $color--secondary: #FF79DA;
 $color--tertiary: #99E2D0;
 $color--background:#f2f2f2;
+/**btn**/
+
 $color-btn:linear-gradient(darken($color--secondary,3),$color--primary);
 $color-btn--hover:linear-gradient(darken(lighten($color--secondary,5),3),lighten($color--primary,5));
 $cadre-shadow:1px 3px 10px darken($color--background,10);
 $btn-shadow:0px 3px 10px darken($color--background,40);
 $btn-shadow--hover:0px 6px 10px darken($color--background,40);
+
+/**animations**/
 $duree:0.6s;
 $delais:0.2s;
+$boule-duree: 1.5s;
+$boule-delais:0.2s;
+
+/**menus**/
 $nb-entree:4;
 $nb-plat:3;
 $nb-dessert:3;
+

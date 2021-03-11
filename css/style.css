@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/**couleurs**/
+/**btn**/
+/**animations**/
+/**menus**/
 @keyframes apparition {
   0% {
     transform: translateY(1rem);
@@ -7,6 +11,38 @@
   100% {
     transform: translateY(0rem);
     opacity: 1;
+  }
+}
+@keyframes tourne {
+  0% {
+    transform: rotate(0turn);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(1turn);
+    opacity: 0;
+  }
+}
+@keyframes deplacement {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes disparition {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 html, body, div, span, applet, object, iframe,
@@ -107,6 +143,68 @@ body {
   left: 1rem;
   top: 1.1rem;
   color: #4d4d4d;
+}
+
+.bloc-page {
+  animation: deplacement 0s 3s both;
+}
+
+.loading {
+  position: fixed;
+  z-index: -2;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  position: relative;
+  z-index: 1;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 6rem;
+  border: 2px #9356DC solid;
+  animation: tourne 1.5s linear both 2;
+}
+.spinner__boule1 {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  background-color: #71d7be;
+  top: 0;
+  left: 0;
+}
+.spinner__boule2 {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  background-color: #71d7be;
+  top: 0;
+  right: 0;
+}
+.spinner__boule3 {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  background-color: #71d7be;
+  bottom: 0;
+  left: 0;
+}
+.spinner__boule4 {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  background-color: #71d7be;
+  bottom: 0;
+  right: 0;
 }
 
 .localisation {

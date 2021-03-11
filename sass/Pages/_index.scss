@@ -1,3 +1,38 @@
+.bloc-page{
+    animation: deplacement 0s 3s both;
+}
+.loading{
+    position: fixed;
+    z-index: -2;
+    top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner{
+	@include spinner;
+	animation: tourne $boule-duree linear both 2;
+
+	&__boule1{
+		@include boule1;
+	}
+	&__boule2{
+		@include boule2;
+
+	}
+	&__boule3{
+		@include boule3;
+
+	}
+	&__boule4{
+		@include boule4;
+
+	}
+}
+
 .localisation{
     @include auto;
     @include center;
