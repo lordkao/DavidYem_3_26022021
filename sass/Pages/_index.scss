@@ -1,5 +1,5 @@
 .bloc-page{
-    animation: deplacement 0s 3s both;
+    animation: deplacement 0s $bloc-delais both;
 }
 .loading{
     position: fixed;
@@ -13,11 +13,11 @@
     background:radial-gradient(lighten($color--secondary,10),lighten($color--primary,10));
     justify-content: center;
     align-items: center;
-    animation: disparition 3s $delais linear both;
+    animation: disparition $boule-duree $boule-delais linear both 1;
 }
 .spinner{
 	@include spinner;
-	animation: tourne $boule-duree ease-in both 1;
+	animation: tourne $boule-duree $boule-delais ease-in both 1;
 
 	&__boule1{
 		@include boule1;
