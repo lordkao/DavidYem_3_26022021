@@ -8,13 +8,14 @@
         font-family: "Shrikhand";
         font-size: map-get($police-size,l);
         margin: 1rem 0rem 0.5rem 0rem;
+        @media screen and(min-width:768px) {/*test du @media*/
+            font-size: map-get($police-size,e);
+        }
     }
-    @media screen and(min-width:700px) {/*test du @media*/
+    @media screen and(min-width:768px) {/*test du @media*/
         width: auto;
         height: 200%;
         align-self: center;
-        background-color: lighten($color--primary, 20);
-        margin: 0rem 25% 0rem 25%;
     }
     & i{
         font-size: map-get($police-size, m);
@@ -22,5 +23,8 @@
         left: 1rem;
         top: 1.1rem;
         color: lighten( #000000, 30);
+        @media screen and(min-width:768px) {/*test du @media*/
+            font-size: map-get($police-size,l);
+        }
     }
 }

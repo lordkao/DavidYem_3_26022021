@@ -6,6 +6,7 @@ $color--tertiary: #99E2D0;
 $color--background:#f2f2f2;
 /**btn**/
 
+$color-top-header:linear-gradient(lighten($color--primary,10),60%,lighten($color--secondary,10));
 $color-btn:linear-gradient(darken($color--secondary,3),$color--primary);
 $color-btn--hover:linear-gradient(darken(lighten($color--secondary,5),3),lighten($color--primary,5));
 $cadre-shadow:1px 3px 10px darken($color--background,10);
@@ -17,7 +18,8 @@ $duree:0.3s;
 $delais:0.2s;
 $boule-duree: 1.5s;
 $boule-delais:0.2s;
-$bloc-delais: $boule-duree + $boule-delais;
+$repetition:1;
+$bloc-delais: ($boule-duree + $boule-delais) * $repetition;
 
 /**menus**/
 $nb-entree:4;
