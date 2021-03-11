@@ -43,7 +43,7 @@
     background-color: $color--background;
     padding-bottom: 3rem;
     @media screen and(min-width:768px) {/*test du @media*/
-        margin: 4rem;
+        margin: 2rem 4rem;
         border-radius: 1rem;
         overflow: hidden;
     }
@@ -55,6 +55,9 @@
         font-size: map-get($police-size,s);
         font-weight: bold;
         background-color: darken($color--background,5);
+        @media screen and(min-width:768px) {/*test du @media*/
+            font-size: map-get($police-size, m);
+        }
         & i{
             margin-right: 1rem;
         }
@@ -66,12 +69,18 @@
         font-size: map-get($police-size,m );
         font-weight:bold;
         margin: 2rem 0rem 1rem 0rem;
+        @media screen and(min-width:768px) {/*test du @media*/
+            font-size: map-get($police-size, l);
+        }
     }
     &__quote{
         @include auto;
         text-align: center;
         font-size: map-get($police-size,s);
         margin: 0rem 1rem 2rem 1rem;
+        @media screen and(min-width:768px) {/*test du @media*/
+            font-size: map-get($police-size, m);
+        }
     }
     &__btn{
         box-shadow:$btn-shadow;
@@ -86,11 +95,14 @@
     padding:3rem 1rem;
     @media screen and(min-width:768px) {/*test du @media*/
         border-radius: 1rem;
-        margin: 4rem;
+        margin: 2rem 4rem;
     }
     &__title{
         font-size: map-get($police-size, m);
         font-weight: bold;
+        @media screen and(min-width:768px) {/*test du @media*/
+            font-size: map-get($police-size, l);
+        }
     }
 }
 .presentation{
@@ -111,7 +123,7 @@
         background-color: lighten($color--primary,35);
         & i{
         color: $color--primary;
-    }
+        }
     }
     
 }
@@ -128,10 +140,11 @@
     background-color: $color--background;
     @media screen and(min-width:768px) {/*test du @media*/
         @include auto;
-        margin: 0rem 20%;
+        margin: 2rem 4rem;
         border-radius: 50px;
         background-color: $color--background;
         margin-bottom: 3rem;
+        padding: 2rem 3rem 3rem 3rem;
     }
     @media screen and(min-width:1024px) {/*test du @media*/
         @include auto;
@@ -149,20 +162,27 @@
     text-align: left;
     @media screen and(min-width:768px) {/*test du @media*/
         @include auto;
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 }
 .cadre{
     box-shadow: $cadre-shadow;
     @include cadre;
+    
     .lien{
         text-decoration: none;
         color: black;
         width: 100%;
         height: auto;
         overflow: hidden;
+        @media screen and(min-width:768px) {/*test du @media*/
+            height: 80%;
+            width:100%;
+            overflow: hidden;
+        }
         &__photo{
             position: relative;
             @include photosize;
@@ -204,23 +224,32 @@
                 cursor: grabbing;
             }
             & i{
-                transform: scale(1,1.3) rotate(0deg);
+                transform: scale(1,1.3);
                 margin-bottom: 1.5rem;
                 margin-left: 0.5rem;
                 font-size: 1rem;
                 transform-origin: center;
                 transition: font-weight 0s,transform 1s;
+                @media screen and(min-width:768px) {/*test du @media*/
+                    transform: scale(1.3,1.8);
+                }
                 &:active{
                     color: $color--primary;
                     font-weight: bold;
-                    transform: scale(1.5,1.7) rotate(1turn);
+                    transform: scale(1.5,1.7) ;
                     transition:transform 0.5s, color 1s;
+                    @media screen and(min-width:768px) {/*test du @media*/
+                        transform: scale(1.8,2.1) ;
+                    }
                 }
                 &:hover{
                     color: $color--primary;
                     font-weight: bold;
-                    transform: scale(1.5,1.7) rotate(1turn);
+                    transform: scale(1.5,1.7);
                     transition:transform 0.5s, color 1s;
+                    @media screen and(min-width:768px) {/*test du @media*/
+                        transform: scale(1.8,2.1);
+                    }
                 }
             }
         }

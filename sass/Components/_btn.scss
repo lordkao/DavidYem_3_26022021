@@ -7,6 +7,9 @@
     color: white;
     border-radius: 25px 25px;
     background: $color-btn;
+    @media screen and(min-width:768px) {/*test du @media*/
+        font-size: map-get($police-size, m);
+    }
     &:hover{
         background: $color-btn--hover;
         box-shadow: $btn-shadow--hover;
@@ -21,6 +24,13 @@
     font-size: map-get($police-size, xs); 
     border-radius: 3px;
     font-weight: bold;
+    @media screen and(min-width:768px) {/*test du @media*/
+        height: 2.5rem;
+        width: 5.5rem;
+        @include center;
+        font-size: map-get($police-size, s); 
+        border-radius: 3px;
+    }
 }
 @mixin spinner{
     position: relative;

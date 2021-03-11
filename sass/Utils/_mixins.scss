@@ -8,6 +8,10 @@
     border-radius: 15px;
     overflow: hidden;
     margin: 1rem 0rem;
+    @media screen and(min-width:768px) {/*test du @media*/
+        height: 20rem;
+        border-radius: 1.5rem;
+    }
 }
 @mixin photofit{
     height: 130%;
@@ -19,6 +23,11 @@
 @mixin photosize{
     height: 9rem;
     width:100%;
+    @media screen and(min-width:768px) {/*test du @media*/
+        height: auto;
+        width:100%;
+        overflow: hidden;
+    }
 }
 @mixin description{
     height: 4rem;
@@ -28,6 +37,11 @@
     align-items:center;
     background-color: white;
     overflow: hidden;
+    @media screen and(min-width:768px) {/*test du @media*/
+        height: 20%;
+        width:100%;
+        overflow: hidden;
+    }
 }
 @mixin h2{
         font-size: map-get($police-size, s);
@@ -35,12 +49,20 @@
         margin: 1rem 0rem 0.5rem 0.5rem;
         height: auto;
         width: auto;
+        @media screen and(min-width:768px) {/*test du @media*/
+            font-size: map-get($police-size, m);
+            margin:0.5rem 0rem 0.5rem 1rem;
+        }
 }
 @mixin p{
         font-size: map-get($police-size, xs);
         margin-left: 0.5rem;
         height: auto;
         width: auto;
+        @media screen and(min-width:768px) {/*test du @media*/
+            font-size: map-get($police-size, s);
+            margin-left: 1rem;
+        }
 }
 @mixin auto{
     width: auto;
@@ -59,8 +81,12 @@
     align-items: center;
     font-weight: bold;
     margin-top: 1rem;
+    font-size: map-get($police-size, xm);
     background-color: $color--background;
     border-radius: 20px;
+    @media screen and(min-width:768px) {/*test du @media*/
+        font-size: map-get($police-size, m);
+    }
 }
 @mixin circle{
     @include center;
@@ -72,15 +98,24 @@
     background-color: $color--primary;
     position: relative;
     right: 0.5rem;
+    @media screen and(min-width:768px) {/*test du @media*/
+        font-size: map-get($police-size, xm);
+        height: 1.7rem;
+        width: 1.7rem;
+        border-radius: 15px;
+    }
 }
 @mixin i{
     height: 1.2rem;
     width: 1.2rem;
     @include center;
-    font-size: 1.2rem;
+    font-size: map-get($police-size, m);
     color:darken($color--background,40);
     margin-right: 1.5rem;
     margin-left: 1rem;
+    @media screen and(min-width:768px) {/*test du @media*/
+        font-size: map-get($police-size, l);
+    }
 }
 @mixin cadre-menu{
     @include auto;
