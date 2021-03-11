@@ -42,6 +42,11 @@
     flex-direction: column;
     background-color: $color--background;
     padding-bottom: 3rem;
+    @media screen and(min-width:768px) {/*test du @media*/
+        margin: 4rem;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
     &__barre{
         @include center;
         color: darken($color--background,60);
@@ -79,6 +84,10 @@
     display: flex;
     flex-direction: column;
     padding:3rem 1rem;
+    @media screen and(min-width:768px) {/*test du @media*/
+        border-radius: 1rem;
+        margin: 4rem;
+    }
     &__title{
         font-size: map-get($police-size, m);
         font-weight: bold;
@@ -117,7 +126,14 @@
     align-items: center;
     padding: 3rem 1rem;
     background-color: $color--background;
-    @media screen and(min-width:700px) {/*test du @media*/
+    @media screen and(min-width:768px) {/*test du @media*/
+        @include auto;
+        margin: 0rem 20%;
+        border-radius: 50px;
+        background-color: $color--background;
+        margin-bottom: 3rem;
+    }
+    @media screen and(min-width:1024px) {/*test du @media*/
         @include auto;
         margin: 0rem 20%;
         border-radius: 50px;
@@ -131,7 +147,7 @@
     font-size: map-get($police-size,m);
     font-weight: bold;
     text-align: left;
-    @media screen and(min-width:700px) {/*test du @media*/
+    @media screen and(min-width:768px) {/*test du @media*/
         @include auto;
         font-size: 3rem;
         text-align: center;

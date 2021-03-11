@@ -128,14 +128,14 @@ body {
   font-size: 1.5rem;
   margin: 1rem 0rem 0.5rem 0rem;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .head {
     /*test du @media*/
     width: auto;
     height: 200%;
     align-self: center;
-    background-color: #c9abee;
-    margin: 0rem 25% 0rem 25%;
+    background: linear-gradient(#ae80e5, 60%, #fface8);
+    border-radius: 0 0 1rem 1rem;
   }
 }
 .head i {
@@ -221,6 +221,14 @@ body {
   background-color: #f2f2f2;
   padding-bottom: 3rem;
 }
+@media screen and (min-width: 768px) {
+  .localisation {
+    /*test du @media*/
+    margin: 4rem;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+}
 .localisation__barre {
   display: flex;
   justify-content: center;
@@ -275,6 +283,13 @@ body {
   display: flex;
   flex-direction: column;
   padding: 3rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement {
+    /*test du @media*/
+    border-radius: 1rem;
+    margin: 4rem;
+  }
 }
 .fonctionnement__title {
   font-size: 1.3rem;
@@ -341,7 +356,18 @@ body {
   padding: 3rem 1rem;
   background-color: #f2f2f2;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
+  .menu {
+    /*test du @media*/
+    width: auto;
+    height: auto;
+    margin: 0rem 20%;
+    border-radius: 50px;
+    background-color: #f2f2f2;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
   .menu {
     /*test du @media*/
     width: auto;
@@ -360,7 +386,7 @@ body {
   font-weight: bold;
   text-align: left;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .menu__title {
     /*test du @media*/
     width: auto;
