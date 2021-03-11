@@ -9,12 +9,15 @@
 	bottom: 0px;
 	left: 0px;
     display: flex;
+    opacity: 0;
+    background:radial-gradient(lighten($color--secondary,10),lighten($color--primary,10));
     justify-content: center;
     align-items: center;
+    animation: disparition 3s $delais linear both;
 }
 .spinner{
 	@include spinner;
-	animation: tourne $boule-duree linear both 2;
+	animation: tourne $boule-duree ease-in both 1;
 
 	&__boule1{
 		@include boule1;
