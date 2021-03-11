@@ -13,11 +13,11 @@
     background:radial-gradient(lighten($color--secondary,10),lighten($color--primary,10));
     justify-content: center;
     align-items: center;
-    animation: disparition $boule-duree $boule-delais linear both 1;
+    animation: disparition $boule-duree $boule-delais linear both $repetition;
 }
 .spinner{
 	@include spinner;
-	animation: tourne $boule-duree $boule-delais ease-in both 1;
+	animation: tourne $boule-duree $boule-delais ease-in both $repetition;
 
 	&__boule1{
 		@include boule1;

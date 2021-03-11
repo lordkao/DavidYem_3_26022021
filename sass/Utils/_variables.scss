@@ -17,7 +17,8 @@ $duree:0.3s;
 $delais:0.2s;
 $boule-duree: 1.5s;
 $boule-delais:0.2s;
-$bloc-delais: $boule-duree + $boule-delais;
+$repetition:1;
+$bloc-delais: ($boule-duree + $boule-delais) * $repetition;
 
 /**menus**/
 $nb-entree:4;
