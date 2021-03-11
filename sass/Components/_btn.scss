@@ -22,3 +22,40 @@
     border-radius: 3px;
     font-weight: bold;
 }
+@mixin spinner{
+    position: relative;
+    z-index: 1;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 4rem;
+    border: 2px $color--tertiary solid;
+}
+@mixin boule-size{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: darken($color--primary, 5) ;
+
+}
+@mixin boule1{
+    @include boule-size;
+    top: 0;
+    left: 0;
+
+}
+@mixin boule2{
+    @include boule-size;
+    top: 0;
+    right:0;
+}
+@mixin boule3{
+    @include boule-size;
+    bottom:0;
+    left: 0;
+}
+@mixin boule4{
+    @include boule-size;
+    bottom:0;
+    right: 0;
+}
