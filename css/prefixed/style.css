@@ -781,6 +781,12 @@ footer {
     box-shadow: 1px 3px 10px #d9d9d9;
   }
 }
+@media screen and (min-width: 1440px) {
+  .carte {
+    /*test du @media*/
+    margin: -3rem 20% 3rem 20%;
+  }
+}
 .carte__title {
   font-family: "Shrikhand";
   display: flex;
