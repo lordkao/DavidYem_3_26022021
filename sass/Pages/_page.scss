@@ -28,6 +28,9 @@
         border-radius: 30px;
         box-shadow: $cadre-shadow;
     }
+    @media screen and(min-width:1440px) {/*test du @media*/
+        margin: -3rem 20% 3rem 20%;
+    }
     
     
     &__title{

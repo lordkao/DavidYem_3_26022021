@@ -43,9 +43,13 @@
     background-color: $color--background;
     padding-bottom: 3rem;
     @media screen and(min-width:768px) {/*test du @media*/
-        margin: 2rem 4rem;
+        margin: 0rem 10%;
         border-radius: 1rem;
         overflow: hidden;
+        box-shadow: $cadre-shadow;
+        @media screen and(min-width:1440px) {/*test du @media*/
+            margin: 0rem 20%;
+        }
     }
     &__barre{
         @include center;
@@ -95,7 +99,10 @@
     padding:3rem 1rem;
     @media screen and(min-width:768px) {/*test du @media*/
         border-radius: 1rem;
-        margin: 2rem 4rem;
+        margin: 0rem 10%;
+    }
+    @media screen and(min-width:1440px) {/*test du @media*/
+        margin: 0rem 20%;
     }
     &__title{
         font-size: map-get($police-size, m);
@@ -140,17 +147,15 @@
     background-color: $color--background;
     @media screen and(min-width:768px) {/*test du @media*/
         @include auto;
-        margin: 2rem 4rem;
+        margin: 0rem 10%;
         border-radius: 50px;
         background-color: $color--background;
         margin-bottom: 3rem;
         padding: 2rem 3rem 3rem 3rem;
+        box-shadow: $cadre-shadow;
     }
-    @media screen and(min-width:1024px) {/*test du @media*/
-        @include auto;
+    @media screen and(min-width:1440px) {/*test du @media*/
         margin: 0rem 20%;
-        border-radius: 50px;
-        background-color: $color--background;
         margin-bottom: 3rem;
     }
 }
@@ -231,6 +236,10 @@
                 @media screen and(min-width:768px) {/*test du @media*/
                     transform: scale(1.3,1.8);
                 }
+                @media screen and(min-width:1024px) {/*test du @media*/
+                    transform: scale(1.5,2);
+                    margin-bottom: 2.3rem;
+                }
                 &:active{
                     color: $color--primary;
                     font-weight: bold;
@@ -238,6 +247,9 @@
                     transition:transform 0.5s, color 1s;
                     @media screen and(min-width:768px) {/*test du @media*/
                         transform: scale(1.8,2.1) ;
+                    }
+                    @media screen and(min-width:1024px) {/*test du @media*/
+                        transform: scale(2,2.3);
                     }
                 }
                 &:hover{
@@ -247,6 +259,9 @@
                     transition:transform 0.5s, color 1s;
                     @media screen and(min-width:768px) {/*test du @media*/
                         transform: scale(1.8,2.1);
+                    }
+                    @media screen and(min-width:1024px) {/*test du @media*/
+                        transform: scale(2,2.3);
                     }
                 }
             }
