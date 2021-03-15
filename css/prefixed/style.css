@@ -759,6 +759,24 @@ footer {
   position: relative;
   right: 2.5rem;
 }
+@media screen and (min-width: 768px) {
+  .top-img {
+    /*test du @media*/
+    height: 30rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .top-img {
+    /*test du @media*/
+    height: 35rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .top-img {
+    /*test du @media*/
+    height: 40rem;
+  }
+}
 
 .carte {
   width: auto;
