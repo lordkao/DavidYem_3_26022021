@@ -169,9 +169,7 @@
     }
 }
 .cadre{
-    box-shadow: $cadre-shadow;
     @include cadre;
-    
     .lien{
         text-decoration: none;
         color: black;
