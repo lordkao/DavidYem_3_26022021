@@ -462,7 +462,6 @@ body {
 }
 
 .cadre {
-  box-shadow: 1px 3px 10px #d9d9d9;
   height: 13rem;
   width: 100%;
   display: flex;
@@ -472,6 +471,7 @@ body {
   border-radius: 15px;
   overflow: hidden;
   margin: 1rem 0rem;
+  box-shadow: 1px 3px 10px #d9d9d9;
 }
 @media screen and (min-width: 768px) {
   .cadre {
@@ -725,6 +725,15 @@ footer {
   border-radius: 30px 30px 0px 0px;
   background-color: #f2f2f2;
 }
+@media screen and (min-width: 768px) {
+  .carte {
+    /*test du @media*/
+    padding: 2rem 2rem;
+    margin: -3rem 2rem 2rem 2rem;
+    border-radius: 30px;
+    box-shadow: 1px 3px 10px #d9d9d9;
+  }
+}
 .carte__title {
   font-family: "Shrikhand";
   display: flex;
@@ -732,10 +741,22 @@ footer {
   justify-content: space-between;
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 768px) {
+  .carte__title {
+    /*test du @media*/
+    font-size: 2.5rem;
+  }
+}
 .carte__title i {
   position: relative;
   bottom: 0.2rem;
   margin-right: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .carte__title i {
+    /*test du @media*/
+    margin-right: 2rem;
+  }
 }
 
 .entree {
@@ -747,6 +768,13 @@ footer {
   font-size: 0.9rem;
   text-transform: uppercase;
   margin-bottom: 0.2rem;
+}
+@media screen and (min-width: 768px) {
+  .entree__title {
+    /*test du @media*/
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+  }
 }
 .entree__cadre {
   animation: apparition 0.3s 0.2s ease-in-out both;
@@ -774,6 +802,13 @@ footer {
   text-transform: uppercase;
   margin-bottom: 0.2rem;
 }
+@media screen and (min-width: 768px) {
+  .plat__title {
+    /*test du @media*/
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+  }
+}
 .plat__cadre {
   animation: apparition 0.3s 0.2s ease-in-out both;
 }
@@ -797,6 +832,13 @@ footer {
   text-transform: uppercase;
   margin-bottom: 0.2rem;
 }
+@media screen and (min-width: 768px) {
+  .dessert__title {
+    /*test du @media*/
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+  }
+}
 .dessert__cadre {
   animation: apparition 0.3s 0.2s ease-in-out both;
 }
@@ -812,15 +854,19 @@ footer {
 
 .cadre-menu {
   width: auto;
-  height: auto;
   display: flex;
   background-color: white;
   border-radius: 15px;
   margin-bottom: 1rem;
   overflow: hidden;
-  width: auto;
-  height: auto;
+  box-shadow: 1px 3px 10px #d9d9d9;
   height: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .cadre-menu {
+    /*test du @media*/
+    height: 6rem;
+  }
 }
 .cadre-menu:hover > .cadre-menu__name {
   width: 65%;
@@ -854,25 +900,40 @@ footer {
   width: auto;
   height: auto;
   font-size: 0.9rem;
-  margin: 1rem 0.5rem 0rem 0.5rem;
+  margin: 1rem 0.5rem 0rem 1rem;
   padding-bottom: 0.2rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   font-weight: bold;
 }
+@media screen and (min-width: 768px) {
+  .cadre-menu__name h3 {
+    /*test du @media*/
+    margin: 1.5rem 0.5rem 0.5rem 1.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+}
 .cadre-menu__name p {
   width: auto;
   height: auto;
-  margin: 0.5rem 0.5rem;
+  margin: 0.5rem 1rem;
   padding-bottom: 0.2rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   font-size: 0.8rem;
 }
+@media screen and (min-width: 768px) {
+  .cadre-menu__name p {
+    /*test du @media*/
+    margin: 0.5rem 0.5rem 0.5rem 1.5rem;
+    padding-bottom: 0.2rem;
+    font-size: 1rem;
+  }
+}
 .cadre-menu__price {
-  font-size: 0.8rem;
   font-weight: bold;
   height: 100%;
   width: 15%;
@@ -882,7 +943,15 @@ footer {
   background-color: white;
 }
 .cadre-menu__price p {
-  margin-bottom: 0.9rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.7rem;
+}
+@media screen and (min-width: 768px) {
+  .cadre-menu__price p {
+    /*test du @media*/
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
 }
 .cadre-menu__rotation {
   height: 100%;
@@ -935,6 +1004,14 @@ footer {
   width: 2.2rem;
   border: 1px #99E2D0 solid;
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .green-line {
+    /*test du @media*/
+    width: 3rem;
+    border: 3px #99E2D0 solid;
+    margin-bottom: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

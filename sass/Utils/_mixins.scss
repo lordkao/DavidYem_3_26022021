@@ -8,6 +8,7 @@
     border-radius: 15px;
     overflow: hidden;
     margin: 1rem 0rem;
+    box-shadow: $cadre-shadow;
     @media screen and(min-width:768px) {/*test du @media*/
         height: 20rem;
         border-radius: 1.5rem;
@@ -118,15 +119,25 @@
     }
 }
 @mixin cadre-menu{
-    @include auto;
+    width: auto;    
     display: flex;
     background-color: white;
     border-radius: 15px;
     margin-bottom: 1rem;
     overflow: hidden;
+    box-shadow: $cadre-shadow;
+    height: 4rem;
+    @media screen and(min-width:768px) {/*test du @media*/
+        height: 6rem;
+    }
+
 }
 @mixin title-menu{
     font-size: map-get($police-size,s);
     text-transform: uppercase;
     margin-bottom: 0.2rem;
+    @media screen and(min-width:768px) {/*test du @media*/
+        font-size: map-get($police-size,m);
+        margin-bottom: 0.7rem;
+    }
 }

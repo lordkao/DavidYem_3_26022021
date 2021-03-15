@@ -22,16 +22,30 @@
     padding: 2rem 1rem;
     border-radius: 30px 30px 0px 0px;
     background-color: $color--background;
+    @media screen and(min-width:768px) {/*test du @media*/
+        padding: 2rem 2rem;
+        margin: -3rem 2rem 2rem 2rem;
+        border-radius: 30px;
+        box-shadow: $cadre-shadow;
+    }
+    
+    
     &__title{
         font-family: "Shrikhand";
         display: flex;
         font-size: map-get($police-size,l);
         justify-content: space-between;
         margin-bottom: 2rem;
+        @media screen and(min-width:768px) {/*test du @media*/
+            font-size: map-get($police-size,e);
+        }
         & i{
             position: relative;
             bottom: 0.2rem;
             margin-right: 1rem;
+            @media screen and(min-width:768px) {/*test du @media*/
+                margin-right: 2rem;
+            }
         }
     }
 }
@@ -83,8 +97,6 @@
 }
 .cadre-menu{
     @include cadre-menu;
-    @include auto;
-    height: 4rem;
     &:hover{
         & > .cadre-menu__name{
             width: 65%;
@@ -119,25 +131,34 @@
         & h3{
             @include auto;
             font-size: map-get($police-size,s);
-            margin: 1rem 0.5rem 0rem 0.5rem;
+            margin: 1rem 0.5rem 0rem 1rem;
             padding-bottom: 0.2rem;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
             font-weight: bold;
+            @media screen and(min-width:768px) {/*test du @media*/
+                margin: 1.5rem 0.5rem 0.5rem 1.5rem;
+                padding-bottom: 0.5rem;
+                font-size: map-get($police-size,m);
+            }
         }
         & p{
             @include auto;
-            margin: 0.5rem 0.5rem;
+            margin: 0.5rem 1rem;
             padding-bottom: 0.2rem;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
             font-size: map-get($police-size,xs);
+            @media screen and(min-width:768px) {/*test du @media*/
+                margin: 0.5rem 0.5rem 0.5rem 1.5rem;
+                padding-bottom: 0.2rem;
+                font-size: map-get($police-size,xm);
+            }
         }
     }
     &__price{
-        font-size: map-get($police-size,xs);
         font-weight: bold;
         height: 100%;
         width: 15%;
@@ -145,10 +166,16 @@
         justify-content: start;
         align-items: flex-end;
         background-color: white;
-
+        
         
         & p{
-            margin-bottom: 0.9rem;
+            font-size: map-get($police-size,xs);
+            margin-bottom: 0.7rem;
+            @media screen and(min-width:768px) {/*test du @media*/
+                font-size: map-get($police-size,xm);
+                margin-bottom: 1.2rem;
+
+            }
         }
     }
     &__rotation{
@@ -180,4 +207,9 @@
     width: 2.2rem;
     border: 1px $color--tertiary solid;
     margin-bottom: 1rem;
+    @media screen and(min-width:768px) {/*test du @media*/
+        width: 3rem;
+        border: 3px $color--tertiary solid;
+        margin-bottom: 1.5rem;
+    }
 }
