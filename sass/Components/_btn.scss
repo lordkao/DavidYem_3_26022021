@@ -16,10 +16,10 @@
     @media screen and(min-width:768px) {/*test du @media*/
         font-size: map-get($police-size, m);
     }
-    &:hover{
+    &:active{
             box-shadow: $btn-shadow--hover;
             }
-    &:hover::after{
+    &:active::after{
             opacity: 1;
     }
     
