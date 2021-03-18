@@ -189,10 +189,6 @@
         &__photo{
             position: relative;
             @include photosize;
-      
-            & img{
-                @include photofit;
-            }
             &--new{
                 position: absolute;
                 @include new;
@@ -265,6 +261,54 @@
                     }
                 }
             }
+        }
+    }
+}
+.la-palette{
+    & img{
+        @include photofit;
+        @media screen and(min-width:768px) {/*test du @media*/
+            bottom: 6.7rem;
+            height: max-content;
+        }
+        @media screen and(min-width:1024px) {/*test du @media*/
+            bottom: 4.7rem;
+        }
+    }
+}
+.la-note{
+    & img{
+        @include photofit;
+        @media screen and(min-width:768px) {/*test du @media*/
+            bottom: 18.7rem;
+            height: max-content;
+        }
+        @media screen and(min-width:1024px) {/*test du @media*/
+            bottom: 16.7rem;
+        }
+    }
+}
+.française{
+    & img{
+        @include photofit;
+        @media screen and(min-width:768px) {/*test du @media*/
+            bottom: 7.7rem;
+            height: max-content;
+        }
+        @media screen and(min-width:1024px) {/*test du @media*/
+            bottom: 4.7rem;
+        }
+    }
+}
+.delice{
+    & img{
+        @include photofit;
+        @media screen and(min-width:768px) {/*test du @media*/
+            bottom: 8.7rem;
+            height: max-content;
+        }
+        @media screen and(min-width:1024px) {/*test du @media*/
+            bottom: 5.7rem;
         }
     }
 }
