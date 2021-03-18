@@ -143,11 +143,25 @@
 
 }
 @mixin title-menu{
+    display: flex;
+    flex-direction: column;
     font-size: map-get($police-size,s);
     text-transform: uppercase;
-    margin-bottom: 0.2rem;
     @media screen and(min-width:768px) {/*test du @media*/
         font-size: map-get($police-size,m);
         margin-bottom: 0.7rem;
     }
+}
+@mixin green-bar{
+    content: "";
+        width: 2.2rem;
+        border: 2px $color--tertiary solid;
+        margin-top: 0.4rem;
+        margin-bottom: 0.7rem;
+        @media screen and(min-width:768px) {/*test du @media*/
+            width: 3rem;
+            border: 3px $color--tertiary solid;
+            margin-bottom: 1rem;
+            margin-top: 0.7rem;
+        }
 }

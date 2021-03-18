@@ -2,18 +2,38 @@
     width: 50%;
     height: 3rem;
     padding: 0rem 1rem 0rem 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
     @include center;
     font-size: map-get($police-size,xs);
     color: white;
     border-radius: 25px 25px;
     background: $color-btn;
+    &::after{
+      @include btn-after;
+    }
     @media screen and(min-width:768px) {/*test du @media*/
         font-size: map-get($police-size, m);
     }
     &:hover{
-        background: $color-btn--hover;
-        box-shadow: $btn-shadow--hover;
+            box-shadow: $btn-shadow--hover;
+            }
+    &:hover::after{
+            opacity: 1;
     }
+    
+}
+@mixin btn-after{
+    content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0;
+            background: $color-btn--hover;
 }
 @mixin new{
     height: 1.5rem;
