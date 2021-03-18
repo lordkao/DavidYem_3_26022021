@@ -22,6 +22,12 @@
     &:active::after{
             opacity: 1;
     }
+    &:hover{
+        box-shadow: $btn-shadow--hover;
+        }
+    &:hover::after{
+        opacity: 1;
+}
     
 }
 @mixin btn-after{
