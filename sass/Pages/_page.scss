@@ -66,6 +66,9 @@
     margin-bottom: 1.5rem;
     &__title{
        @include title-menu;
+       &::after{
+        @include green-bar;
+       }
     }
     &__cadre{
         animation: apparition $duree $delais ease-in-out both;
@@ -81,6 +84,9 @@
     margin-bottom: 1.5rem;
     &__title{
        @include title-menu;
+       &::after{
+        @include green-bar;
+       }
     }
     &__cadre{
         animation: apparition $duree $delais ease-in-out both;
@@ -97,6 +103,9 @@
 
     &__title{
        @include title-menu;
+       &::after{
+        @include green-bar;
+       }
     }
     &__cadre{
         animation: apparition $duree $delais ease-in-out both;
@@ -213,15 +222,5 @@
     &__btn{
         box-shadow:$btn-shadow;
         @include btn;
-    }
-}
-.green-line{
-    width: 2.2rem;
-    border: 1px $color--tertiary solid;
-    margin-bottom: 1rem;
-    @media screen and(min-width:768px) {/*test du @media*/
-        width: 3rem;
-        border: 3px $color--tertiary solid;
-        margin-bottom: 1.5rem;
     }
 }
