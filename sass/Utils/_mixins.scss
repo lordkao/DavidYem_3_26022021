@@ -22,7 +22,7 @@
     width: 100%;
     object-fit: cover;
     position: relative;
-    bottom: 2.5rem;
+    bottom: 2.7rem;
 }
 @mixin photosize{
     height: 9rem;
@@ -50,11 +50,11 @@
 @mixin h2{
         font-size: map-get($police-size, s);
         font-weight: 900;
-        margin: 1rem 0rem 0.5rem 0.5rem;
+        margin: 1rem 0rem 0.5rem 0.7rem;
         height: auto;
         width: auto;
         @media screen and(min-width:768px) {/*test du @media*/
-            font-size: map-get($police-size, m);
+            font-size: map-get($police-size, xm);
             margin:0.5rem 0rem 0.5rem 1rem;
         }
         @media screen and(min-width:1024px) {/*test du @media*/
@@ -64,7 +64,7 @@
 }
 @mixin p{
         font-size: map-get($police-size, xs);
-        margin-left: 0.5rem;
+        margin-left: 0.7rem;
         height: auto;
         width: auto;
         @media screen and(min-width:768px) {/*test du @media*/

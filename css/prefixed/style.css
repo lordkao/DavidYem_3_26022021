@@ -524,13 +524,6 @@ body {
     overflow: hidden;
   }
 }
-.cadre .lien__photo img {
-  height: 130%;
-  width: 100%;
-  object-fit: cover;
-  position: relative;
-  bottom: 2.5rem;
-}
 .cadre .lien__photo--new {
   position: absolute;
   height: 1.5rem;
@@ -585,14 +578,14 @@ body {
 .cadre__description a h2 {
   font-size: 0.9rem;
   font-weight: 900;
-  margin: 1rem 0rem 0.5rem 0.5rem;
+  margin: 1rem 0rem 0.5rem 0.7rem;
   height: auto;
   width: auto;
 }
 @media screen and (min-width: 768px) {
   .cadre__description a h2 {
     /*test du @media*/
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 0.5rem 0rem 0.5rem 1rem;
   }
 }
@@ -604,7 +597,7 @@ body {
 }
 .cadre__description a p {
   font-size: 0.8rem;
-  margin-left: 0.5rem;
+  margin-left: 0.7rem;
   height: auto;
   width: auto;
 }
@@ -685,6 +678,90 @@ body {
   .cadre__description--coeur i:hover {
     /*test du @media*/
     transform: scale(2, 2.3);
+  }
+}
+
+.la-palette img {
+  height: 130%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  bottom: 2.7rem;
+}
+@media screen and (min-width: 768px) {
+  .la-palette img {
+    /*test du @media*/
+    bottom: 6.7rem;
+    height: max-content;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .la-palette img {
+    /*test du @media*/
+    bottom: 4.7rem;
+  }
+}
+
+.la-note img {
+  height: 130%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  bottom: 2.7rem;
+}
+@media screen and (min-width: 768px) {
+  .la-note img {
+    /*test du @media*/
+    bottom: 18.7rem;
+    height: max-content;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .la-note img {
+    /*test du @media*/
+    bottom: 16.7rem;
+  }
+}
+
+.française img {
+  height: 130%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  bottom: 2.7rem;
+}
+@media screen and (min-width: 768px) {
+  .française img {
+    /*test du @media*/
+    bottom: 7.7rem;
+    height: max-content;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .française img {
+    /*test du @media*/
+    bottom: 4.7rem;
+  }
+}
+
+.delice img {
+  height: 130%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  bottom: 2.7rem;
+}
+@media screen and (min-width: 768px) {
+  .delice img {
+    /*test du @media*/
+    bottom: 8.7rem;
+    height: max-content;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .delice img {
+    /*test du @media*/
+    bottom: 5.7rem;
   }
 }
 
