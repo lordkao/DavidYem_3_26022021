@@ -175,26 +175,15 @@
 }
 .cadre{
     @include cadre;
-    .lien{
+    &__lien{
         text-decoration: none;
         color: black;
         width: 100%;
-        height: auto;
+        height: 80%;
         overflow: hidden;
-        @media screen and(min-width:768px) {/*test du @media*/
-            height: 80%;
-            width:100%;
-            overflow: hidden;
-        }
-        &__photo{
+        &--photo{
             position: relative;
             @include photosize;
-            &--new{
-                position: absolute;
-                @include new;
-                top: 1rem;
-                right: 1rem;
-            }
         }
     }
     
@@ -265,26 +254,36 @@
     }
 }
 .la-palette{
+    &__new{
+        position: absolute;
+        @include new;
+        top: 1rem;
+        right: 1rem;
+    }
     & img{
         @include photofit;
         @media screen and(min-width:768px) {/*test du @media*/
-            bottom: 6.7rem;
-            height: max-content;
+            bottom: 4.5rem;
         }
         @media screen and(min-width:1024px) {/*test du @media*/
-            bottom: 4.7rem;
+            bottom: 5.7rem;
         }
     }
 }
 .la-note{
+    &__new{
+        position: absolute;
+        @include new;
+        top: 1rem;
+        right: 1rem;
+    }
     & img{
         @include photofit;
         @media screen and(min-width:768px) {/*test du @media*/
-            bottom: 18.7rem;
-            height: max-content;
+            bottom: 4.6rem;
         }
         @media screen and(min-width:1024px) {/*test du @media*/
-            bottom: 16.7rem;
+            bottom: 5.7rem;
         }
     }
 }
@@ -292,11 +291,10 @@
     & img{
         @include photofit;
         @media screen and(min-width:768px) {/*test du @media*/
-            bottom: 7.7rem;
-            height: max-content;
+            bottom: 4.4rem;
         }
         @media screen and(min-width:1024px) {/*test du @media*/
-            bottom: 4.7rem;
+            bottom: 5.7rem;
         }
     }
 }
@@ -304,8 +302,7 @@
     & img{
         @include photofit;
         @media screen and(min-width:768px) {/*test du @media*/
-            bottom: 8.7rem;
-            height: max-content;
+            bottom: 4.6rem;
         }
         @media screen and(min-width:1024px) {/*test du @media*/
             bottom: 5.7rem;
