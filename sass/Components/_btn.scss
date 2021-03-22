@@ -96,3 +96,15 @@
     bottom:0;
     right: 0;
 }
+@mixin coeur-effet{
+    color: $color--primary;
+    font-weight: bold;
+    transform: scale(1.5,1.7);
+    transition:transform 0.5s, color 1s;
+    @media screen and(min-width:768px) {/*test du @media*/
+        transform: scale(1.8,2.1);
+    }
+    @media screen and(min-width:1024px) {/*test du @media*/
+        transform: scale(2,2.3);
+    }    
+}

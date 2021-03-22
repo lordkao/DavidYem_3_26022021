@@ -179,8 +179,13 @@
         text-decoration: none;
         color: black;
         width: 100%;
-        height: 80%;
+        height: 70%;
         overflow: hidden;
+        @media screen and(min-width:768px) {/*test du @media*/
+            width:100%;
+            height: 80%;
+            overflow: hidden;
+        }
         &--photo{
             position: relative;
             @include photosize;
@@ -216,38 +221,24 @@
                 margin-bottom: 1.5rem;
                 margin-left: 0.5rem;
                 font-size: 1rem;
-                transform-origin: center;
                 transition: font-weight 0s,transform 1s;
                 @media screen and(min-width:768px) {/*test du @media*/
                     transform: scale(1.3,1.8);
+                    margin-left: 1.5rem;
+
                 }
                 @media screen and(min-width:1024px) {/*test du @media*/
                     transform: scale(1.5,2);
                     margin-bottom: 2.3rem;
+                    margin-left: 3.5rem;
+
                 }
                 &:active{
-                    color: $color--primary;
-                    font-weight: bold;
-                    transform: scale(1.5,1.7) ;
-                    transition:transform 0.5s, color 1s;
-                    @media screen and(min-width:768px) {/*test du @media*/
-                        transform: scale(1.8,2.1) ;
-                    }
-                    @media screen and(min-width:1024px) {/*test du @media*/
-                        transform: scale(2,2.3);
-                    }
+                    @include coeur-effet;
+
                 }
                 &:hover{
-                    color: $color--primary;
-                    font-weight: bold;
-                    transform: scale(1.5,1.7);
-                    transition:transform 0.5s, color 1s;
-                    @media screen and(min-width:768px) {/*test du @media*/
-                        transform: scale(1.8,2.1);
-                    }
-                    @media screen and(min-width:1024px) {/*test du @media*/
-                        transform: scale(2,2.3);
-                    }
+                    @include coeur-effet;
                 }
             }
         }
