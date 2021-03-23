@@ -158,19 +158,19 @@
         margin: 0rem 20%;
         margin-bottom: 3rem;
     }
-}
-.menu__title{
-    height: auto;
-    width: 90%;
-    font-size: map-get($police-size,m);
-    font-weight: bold;
-    text-align: left;
-    @media screen and(min-width:768px) {/*test du @media*/
-        @include auto;
-        font-size: 2rem;
-        text-align: center;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
+    &__title{
+        height: auto;
+        width: 100%;
+        font-size: map-get($police-size,m);
+        font-weight: bold;
+        text-align: left;
+        @media screen and(min-width:768px) {/*test du @media*/
+            @include auto;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
     }
 }
 .cadre{
