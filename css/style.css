@@ -474,10 +474,9 @@ body {
     margin-bottom: 3rem;
   }
 }
-
 .menu__title {
   height: auto;
-  width: 90%;
+  width: 100%;
   font-size: 1.3rem;
   font-weight: bold;
   text-align: left;
