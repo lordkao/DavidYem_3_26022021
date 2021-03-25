@@ -1093,6 +1093,7 @@ footer {
 .cadre-menu {
   width: auto;
   display: flex;
+  cursor: pointer;
   background-color: white;
   border-radius: 15px;
   margin-bottom: 1rem;
