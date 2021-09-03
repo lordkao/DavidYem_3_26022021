@@ -14,9 +14,14 @@ footer{
     margin-bottom: 1.5rem;
     @media screen and(min-width:768px) {/*test du @media*/
         font-size: 1.5rem;
+        text-align: center;
     }
 }
 .foot{
+    @media screen and(min-width:768px) {
+        display: flex;
+        justify-content: center;
+    }
     @include auto;
     & i{
         margin-right: 0.7rem;
@@ -32,6 +37,7 @@ footer{
         margin-bottom: 0.5rem;
         @media screen and(min-width:768px) {/*test du @media*/
             font-size: 1rem;
+            margin-right: 40px;
         }
 
     }
